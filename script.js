@@ -19,7 +19,10 @@ async function setup() {
         if(e.code !== "Space") return
         canvas.getContext("2d").drawImage(video, 0, 0, video.width, video.height)
         const {data: { text } } = await worker.recognize(canvas)
-        console.log(text)
+        
+speechSynthesis.speak(new SpeechSynthesisUtterance(text.replace(/\s/g, " ")))
+
+        textElem.textContent = text
         })
     })
 }
