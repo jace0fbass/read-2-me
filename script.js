@@ -3,7 +3,8 @@ const textElem = document.querySelector("[data-text]")
 const scan = document.getElementById("scan")
 
 async function setup() {
-  const stream = await navigator.mediaDevices.getUserMedia({ video: true });
+  const stream = await navigator.mediaDevices.getUserMedia({ video: { facingMode: { exact: 'environment'
+  } } });
   video.srcObject = stream;
 
   video.addEventListener("playing", async () => {
