@@ -1,0 +1,14 @@
+
+@media (max-width: 500px) {
+body {
+    background-color: rgb(166, 214, 231);
+}
+video {
+ max-width: 390px;
+ margin: -8px;
+ margin-top: -120px;
+}
+#scan {
+    font-size: 40px;
+}
+}
