@@ -6,7 +6,6 @@ body {
 video {
  max-width: 390px;
  margin: -8px;
- margin-top: -50px;
 }
 #scan {
     font-size: 40px;
