@@ -1,3 +1,9 @@
+body {
+    background-color: rgb(166, 214, 231);
+}
+#scan {
+    font-size: 40px;
+}
 
 @media (max-width: 500px) {
 body {
